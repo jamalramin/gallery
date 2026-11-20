@@ -1,7 +1,7 @@
 import { createHash, createHmac, timingSafeEqual } from "node:crypto";
 
 export const adminCookieName = "forma_admin";
-export const adminSessionMaxAge = 5 *5*5;
+export const adminSessionMaxAge = 8 * 60 * 60;
 
 function getAdminCredentials() {
   return {
