@@ -1,0 +1,16 @@
+[
+  {
+    "id": "05aa208e-717d-4baa-8b39-5defd72b3229",
+    "name": "kili",
+    "price": 1000,
+    "imageUrl": "/uploads/05aa208e-717d-4baa-8b39-5defd72b3229.jpg",
+    "createdAt": "2026-11-20T08:35:55.143Z"
+  },
+  {
+    "id": "ccf8c30a-074b-4c46-9566-7ac47002800f",
+    "name": "GOEat",
+    "price": 500,
+    "imageUrl": "/uploads/ccf8c30a-074b-4c46-9566-7ac47002800f.jpg",
+    "createdAt": "2026-11-20T08:33:54.843Z"
+  }
+]
