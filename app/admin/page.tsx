@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Suspense } from "react";
 import { cookies } from "next/headers";
+import { connection } from "next/server";
 import { adminCookieName, isAdminCredentialsConfigured, isValidAdminSession } from "@/lib/admin-auth";
 import { getGalleryItems } from "@/lib/gallery";
 import AdminGallery from "./admin-gallery";
@@ -40,6 +41,7 @@ export default function AdminPage() {
 }
 
 async function AdminContents() {
+  await connection();
   const credentialsConfigured = isAdminCredentialsConfigured();
   const cookieStore = await cookies();
   const token = cookieStore.get(adminCookieName)?.value;
